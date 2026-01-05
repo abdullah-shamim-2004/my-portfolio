@@ -12,8 +12,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-10 mb-12">
           {/* Brand/Logo Section */}
           <div className="space-y-4 text-center md:text-left">
-            <h2 className="text-2xl font-black tracking-tighter">
-              Abdullah<span className="text-blue-500">Shamim</span>
+            <h2 className="text-2xl text-white tracking-tighter">
+              Abdullah<span className="text-blue-500"> Shamim</span>
             </h2>
             <p className="text-gray-500 text-sm max-w-xs leading-relaxed">
               Building digital experiences that combine modern technology with
@@ -47,13 +47,13 @@ const Footer = () => {
           <div className="flex items-center gap-6">
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://github.com/abdullah-shamim-2004"
                 className="p-2 bg-white/5 rounded-lg hover:bg-blue-500/20 hover:text-blue-400 transition-all border border-white/5"
               >
                 <Github size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/abdullah-shamim-patwary/"
                 className="p-2 bg-white/5 rounded-lg hover:bg-blue-500/20 hover:text-blue-400 transition-all border border-white/5"
               >
                 <Linkedin size={20} />

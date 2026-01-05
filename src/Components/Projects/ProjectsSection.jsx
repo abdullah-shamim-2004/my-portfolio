@@ -1,48 +1,67 @@
-import React from 'react';
-import { Github, ExternalLink, Globe, Code2, Server } from 'lucide-react';
+import React from "react";
+import { Github, ExternalLink, Globe, Code2, Server } from "lucide-react";
+import scholar from "../../assets/scholar.png";
+import local from "../../assets/local.png";
+import snow from "../../assets/snow.png";
 
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "eTuitionBD",
-      description: "A full-stack online tuition management platform with role-based authentication (Student, Tutor, Admin), secure JWT-protected APIs, tuition posting, search, filtering, pagination, tutor...",
-      tags: ["React", "React Router", "TailwindCSS", "Firebase Auth", "JWT", "Node.js", "Express.js", "MongoDB", "Axios", "Stripe", "REST API"],
-      image: "https://i.ibb.co/v4m0Yv8/tuition.png", // Replace with your actual image link
-      codeLink: "#",
-      serverLink: "#",
-      liveLink: "#"
+      title: "ScholarStrim",
+      description:
+        "A full-stack web application that helps students discover scholarships, apply securely, and manage applications, while allowing admins and moderators to control and verify scholarship data efficiently.",
+      tags: [
+        "React",
+        "React Router",
+        "TailwindCSS",
+        "Firebase Auth",
+        "JWT",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Axios",
+        "Stripe",
+        "REST API",
+      ],
+      image: scholar,
+      codeLink: "https://github.com/abdullah-shamim-2004/ScholarStream-Client",
+      serverLink:
+        "https://github.com/abdullah-shamim-2004/ScholarStream-Server",
+      liveLink: "https://scholar-stream-client.netlify.app/",
     },
     {
-      title: "Model Stack",
-      description: "A full-stack AI model inventory system where users can add, manage, filter, and purchase AI models. Includes Firebase-based authentication, secure CRUD operations, a framework-specific...",
-      tags: ["React", "TailwindCSS", "Firebase Auth", "Node.js", "Express.js", "MongoDB", "Axios", "REST API"],
-      image: "https://i.ibb.co/L8N7M7K/modelstack.png",
-      codeLink: "#",
-      serverLink: "#",
-      liveLink: "#"
+      title: " LocalDelish ",
+      description:
+        "LocalDelish is a community-driven platform for food enthusiasts who love exploring local restaurants, street food, and home-cooked meals. Users can share their food experiences, post reviews with photos, and discover what others are enjoying nearby.",
+      tags: [
+        "React",
+        "TailwindCSS",
+        "Firebase Auth",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Axios",
+        "REST API",
+      ],
+      image: local,
+      codeLink: "https://github.com/abdullah-shamim-2004/Local-Delish-Client",
+      serverLink: "https://github.com/abdullah-shamim-2004/Local-Delish-Server",
+      liveLink: "https://local-delish-client.netlify.app/",
     },
     {
-      title: "Adal Brainwave",
-      description: "A modern AI-themed landing page built with reusable components, smooth section-based animations, and a responsive interface optimized for all devices.",
+      title: "SnowPaws",
+      description:
+        "SnowPaws is a modern pet care service web application built with React, Firebase, and Tailwind CSS.It helps pet owners find reliable winter care packages, meet expert vets, and manage their pets wellbeing easily.",
       tags: ["React.js", "Tailwind CSS", "Javascript", "Vite", "Netlify"],
-      image: "https://i.ibb.co/YyYfG7Y/brainwave.png",
-      codeLink: "#",
-      liveLink: "#"
+      image: snow,
+      codeLink: "https://github.com/abdullah-shamim-2004/SnowPaws",
+      liveLink: "https://snow-paws.netlify.app/",
     },
-    {
-      title: "Awesome Nike Landing Page",
-      description: "A visually striking and responsive landing page built for showcasing Nike products with premium hero animations, dynamic product sections, and a polished brand-focused UI experience.",
-      tags: ["React.js", "Tailwind CSS", "CSS Animations", "Vercel"],
-      image: "https://i.ibb.co/nRL3S8k/nike.png",
-      codeLink: "#",
-      liveLink: "#"
-    }
   ];
 
   return (
     <div className="min-h-screen bg-[#0d1117] text-white py-20 px-6 font-sans">
       <div className="max-w-6xl mx-auto">
-        
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight">
@@ -50,20 +69,23 @@ const ProjectsSection = () => {
           </h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
-            Showcasing my expertise through innovative solutions built with modern technologies
+            Showcasing my expertise through innovative solutions built with
+            modern technologies
           </p>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 md:gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {projects.map((project, index) => (
-            <div key={index} className="bg-[#161b22] border border-gray-800 rounded-3xl overflow-hidden flex flex-col hover:border-blue-500/30 transition-all duration-300">
-              
+            <div
+              key={index}
+              className="bg-[#161b22] border border-gray-800 rounded-3xl overflow-hidden flex flex-col hover:border-blue-500/30 transition-all duration-300"
+            >
               {/* Project Preview Image */}
               <div className="relative group overflow-hidden h-64 bg-[#0d1117]">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
+                <img
+                  src={project.image}
+                  alt={project.title}
                   className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -78,7 +100,10 @@ const ProjectsSection = () => {
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.tags.map((tag, idx) => (
-                    <span key={idx} className="text-[10px] px-2.5 py-1 bg-[#21262d] text-gray-300 border border-gray-700 rounded-md font-medium">
+                    <span
+                      key={idx}
+                      className="text-[10px] px-2.5 py-1 bg-[#21262d] text-gray-300 border border-gray-700 rounded-md font-medium"
+                    >
                       {tag}
                     </span>
                   ))}
@@ -86,17 +111,26 @@ const ProjectsSection = () => {
 
                 {/* Action Buttons (As per image) */}
                 <div className="mt-auto flex flex-wrap gap-3">
-                  <a href={project.codeLink} className="flex items-center gap-2 px-4 py-2 bg-white text-black rounded-lg text-xs font-bold hover:bg-gray-200 transition-colors">
+                  <a
+                    href={project.codeLink}
+                    className="flex items-center gap-2 px-4 py-2 bg-white text-black rounded-lg text-xs font-bold hover:bg-gray-200 transition-colors"
+                  >
                     <Code2 size={14} /> Code
                   </a>
-                  
+
                   {project.serverLink && (
-                    <a href={project.serverLink} className="flex items-center gap-2 px-4 py-2 bg-[#21262d] text-white border border-gray-700 rounded-lg text-xs font-bold hover:bg-[#30363d] transition-colors">
+                    <a
+                      href={project.serverLink}
+                      className="flex items-center gap-2 px-4 py-2 bg-[#21262d] text-white border border-gray-700 rounded-lg text-xs font-bold hover:bg-[#30363d] transition-colors"
+                    >
                       <Server size={14} /> Server
                     </a>
                   )}
 
-                  <a href={project.liveLink} className="flex items-center gap-2 px-4 py-2 bg-[#21262d] text-white border border-gray-700 rounded-lg text-xs font-bold hover:bg-[#30363d] transition-colors">
+                  <a
+                    href={project.liveLink}
+                    className="flex items-center gap-2 px-4 py-2 bg-[#21262d] text-white border border-gray-700 rounded-lg text-xs font-bold hover:bg-[#30363d] transition-colors"
+                  >
                     <ExternalLink size={14} /> Live
                   </a>
                 </div>
@@ -104,7 +138,6 @@ const ProjectsSection = () => {
             </div>
           ))}
         </div>
-
       </div>
     </div>
   );
