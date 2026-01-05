@@ -10,20 +10,48 @@ import AboutSection from "../Components/About/AboutSection";
 
 const HomeLayout = () => {
   return (
-    <div>
+    <div className="bg-gray-900 text-white">
+      {/* Navbar */}
       <header>
-        <Navbar></Navbar>
+        <Navbar />
       </header>
-      <main>
-        <PortfolioHero></PortfolioHero>
-        <AboutSection></AboutSection>
-        <SkillsSection></SkillsSection>
-        <EducationJourney></EducationJourney>
-        <ProjectsSection></ProjectsSection>
-        <ConnectSection></ConnectSection>
+
+      {/* Main Content */}
+      <main className="pt-16">
+        {/* Home */}
+        <section id="home">
+          <PortfolioHero />
+        </section>
+
+        {/* About */}
+        <section id="about">
+          <AboutSection />
+        </section>
+
+        {/* Skills */}
+        <section id="skills">
+          <SkillsSection />
+        </section>
+
+        {/* Education */}
+        <section id="education">
+          <EducationJourney />
+        </section>
+
+        {/* Projects */}
+        <section id="projects">
+          <ProjectsSection />
+        </section>
+
+        {/* Contact */}
+        <section id="contact">
+          <ConnectSection />
+        </section>
       </main>
+
+      {/* Footer */}
       <footer>
-        <Footer></Footer>
+        <Footer />
       </footer>
     </div>
   );

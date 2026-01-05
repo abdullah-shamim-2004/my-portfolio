@@ -18,37 +18,37 @@ const Navbar = () => {
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             <a
-              href="/"
+              href="#home"
               className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium underline decoration-cyan-400 underline-offset-8 decoration-2"
             >
               Home
             </a>
             <a
-              href="/about"
+              href="#about"
               className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               About
             </a>
             <a
-              href="/skills"
+              href="#skills"
               className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Skills
             </a>
             <a
-              href="/education"
+              href="#education"
               className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Education
             </a>
             <a
-              href="/projects"
+              href="#projects"
               className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Projects
             </a>
             <a
-              href="/contact"
+              href="#contact"
               className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Contact

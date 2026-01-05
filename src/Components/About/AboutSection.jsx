@@ -37,13 +37,12 @@ const AboutSection = () => {
 
           {/* RIGHT SIDE – About Me Title */}
           <div className="text-center md:text-right">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              About <span className="text-cyan-400">Me</span>
+            <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-[1.1] mb-6">
+              About <br />
+              <span className="text-blue-400">Me</span>
             </h1>
 
-            <div className="w-32 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 md:ml-auto mx-auto md:mx-0"></div>
-
-            <p className="mt-6 text-gray-400 text-lg max-w-sm md:ml-auto">
+            <p className="text-gray-400 text-lg md:text-xl max-w-lg leading-relaxed md:ml-auto">
               A short introduction about who I am, how I work, and what I care
               about as a developer.
             </p>
