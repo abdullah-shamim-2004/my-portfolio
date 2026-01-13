@@ -63,14 +63,18 @@ const ProjectsSection = () => {
     <div className="min-h-screen bg-[#0d1117] text-white py-20 px-6 font-sans">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight">
-            Featured <span className="text-blue-500">Projects</span>
+        <div className="text-center mb-20">
+          <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1]">
+            Featured <br className="hidden md:block" />
+            <span className="text-blue-500 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+              Projects
+            </span>
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-          <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
+          <div className="w-28 h-1 bg-blue-600 mx-auto my-6 rounded-full"></div>
+          <p className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             Showcasing my expertise through innovative solutions built with
-            modern technologies
+            modern technologies, delivering visually stunning and highly
+            functional web applications.
           </p>
         </div>
 

@@ -3,7 +3,7 @@ import { BookOpen, Code2, Database, Layout, Server, Cpu, Globe, Terminal, Shield
 
 const EducationJourney = () => {
   return (
-    <div className="min-h-screen bg-[#0d1117] text-white py-16 px-4 font-sans selection:bg-[#00ff9d]/30">
+    <div className="min-h-screen bg-[#0d1117] text-white md:py-25 px-4 font-sans selection:bg-[#00ff9d]/30">
       <div className="max-w-4xl mx-auto">
         
         {/* Header Section */}

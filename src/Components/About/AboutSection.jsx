@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <div className="bg-gray-900 min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-900 min-h-[60vh] py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* LEFT SIDE – Normal Text */}
@@ -39,7 +39,7 @@ const AboutSection = () => {
           <div className="text-center md:text-right">
             <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-[1.1] mb-6">
               About <br />
-              <span className="text-blue-400">Me</span>
+              <span className="text-blue-500">Me</span>
             </h1>
 
             <p className="text-gray-400 text-lg md:text-xl max-w-lg leading-relaxed md:ml-auto">

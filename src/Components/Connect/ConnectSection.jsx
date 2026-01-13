@@ -13,17 +13,14 @@ const ConnectSection = () => {
     <div className="min-h-screen bg-[#05070a] text-white py-20 px-6 font-sans">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16 space-y-4">
-          <div className="inline-block p-3 bg-blue-500/10 rounded-full mb-4">
-            <Send className="text-blue-400 w-8 h-8 rotate-12" />
-          </div>
-          <h2 className="text-4xl md:text-6xl font-black tracking-tight">
-            Let's{" "}
+        <div className="text-center mb-20 space-y-6">
+          <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1]">
+            Let's <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
               Connect
             </span>
           </h2>
-          <p className="text-gray-400 max-w-lg mx-auto italic">
+          <p className="text-gray-400 max-w-3xl mx-auto italic text-lg md:text-xl leading-relaxed">
             "Got a vision? Let's craft it into reality and build something
             extraordinary together."
           </p>
@@ -41,7 +38,7 @@ const ConnectSection = () => {
               title="Email"
               subtitle="Drop me an email"
               value="abdullahshamim884@gmail.com"
-              link="abdullahshamim884@gmail.com"
+              link="mailto:abdullahshamim884@gmail.com" 
             />
             <InfoCard
               icon={<Linkedin className="text-blue-500" />}

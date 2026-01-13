@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Twitter, Heart, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Heart, ArrowUp, Mail } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -59,10 +59,13 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:abdullahshamim884@gmail.com"
                 className="p-2 bg-white/5 rounded-lg hover:bg-blue-500/20 hover:text-blue-400 transition-all border border-white/5"
+                aria-label="Send email"
               >
-                <Twitter size={20} />
+                <Mail size={20} />
               </a>
             </div>
             <button

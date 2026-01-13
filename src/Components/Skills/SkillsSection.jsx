@@ -46,14 +46,14 @@ const SkillsSection = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0f1a] text-white py-20 px-4">
+    <div className="min-h-screen bg-[#0a0f1a] text-white md:py-25 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-black text-[#00ff9d] mb-4 tracking-wider uppercase">
+          <h2 className="text-4xl md:text-5xl font-black text-[#ba6efc] mb-4 tracking-wider uppercase">
             My Technical Skills
           </h2>
-          <div className="w-32 h-1.5 bg-gradient-to-r from-transparent via-[#00ff9d] to-transparent mx-auto mb-6"></div>
+          <div className="w-32 h-1.5 bg-gradient-to-r from-transparent via-[#c27aff] to-transparent mx-auto mb-6"></div>
           <p className="text-gray-400 text-sm md:text-base tracking-widest uppercase">
             The web as a canvas,{" "}
             <span className="text-white">
