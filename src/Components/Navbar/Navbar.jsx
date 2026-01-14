@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react"; // আইকনের জন্য
+import { Menu, X } from "lucide-react"; 
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
-  const [isOpen, setIsOpen] = useState(false); // মোবাইল মেনুর স্টেট
+  const [isOpen, setIsOpen] = useState(false); 
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -78,7 +78,7 @@ const Navbar = () => {
                 <a
                   key={link.id}
                   href={link.href}
-                  onClick={() => setIsOpen(false)} // লিঙ্ক ক্লিক করলে মেনু বন্ধ হবে
+                  onClick={() => setIsOpen(false)}
                   className={`w-full text-center py-3 rounded-xl text-sm font-medium transition-all ${
                     activeSection === link.id
                       ? "bg-cyan-500/10 text-cyan-400"
