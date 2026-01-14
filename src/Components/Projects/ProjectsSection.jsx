@@ -61,16 +61,17 @@ const ProjectsSection = () => {
 
   return (
     <div className="min-h-screen bg-[#0d1117] text-white py-20 px-6 font-sans">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl flex flex-col md:flex-row lg:flex-row gap-5 md:gap-15 lg:gap-20 justify-between items-center mx-auto">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-start mb-20">
           <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1]">
             Featured <br className="hidden md:block" />
             <span className="text-blue-500 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
               Projects
             </span>
           </h2>
-          <div className="w-28 h-1 bg-blue-600 mx-auto my-6 rounded-full"></div>
+          <div className="w-20 h-1.5  bg-gradient-to-r from-blue-500 to-transparent mb-6"></div>
+
           <p className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             Showcasing my expertise through innovative solutions built with
             modern technologies, delivering visually stunning and highly
@@ -79,7 +80,7 @@ const ProjectsSection = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {projects.map((project, index) => (
             <div
               key={index}

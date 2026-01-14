@@ -12,12 +12,12 @@ const PortfolioHero = () => {
             Hey, I'm Shamim 👋
           </p>
           <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-[1.1]">
-            <span className="text-blue-500">Frontend</span> <br />
+            <span className="text-blue-500">MERN-STACK</span> <br />
             Developer
           </h1>
           <p className="text-gray-400 text-lg md:text-xl max-w-lg leading-relaxed">
-            I'm a frontend developer based in BD, I'll help you build beautiful
-            websites your users will love.
+            I'm a MERN-STACK developer based in BD, I'll help you build
+            beautiful websites your users will love.
           </p>
           <div className="flex flex-col items-start  text-center justify-center gap-3">
             <div className="flex flex-wrap gap-4 pt-4">

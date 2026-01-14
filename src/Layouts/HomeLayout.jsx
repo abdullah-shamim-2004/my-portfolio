@@ -10,7 +10,7 @@ import AboutSection from "../Components/About/AboutSection";
 
 const HomeLayout = () => {
   return (
-    <div className="bg-gray-900 text-white">
+    <div className="bg-black text-white">
       {/* Navbar */}
       <header>
         <Navbar />

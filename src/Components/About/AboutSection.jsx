@@ -3,8 +3,8 @@ import React from "react";
 const AboutSection = () => {
   return (
     <div className="bg-gray-900 min-h-[60vh] py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1  md:grid-cols-2 gap-12 items-center">
           {/* LEFT SIDE – Normal Text */}
           <div className="text-gray-300">
             <p className="text-lg leading-relaxed mb-6">

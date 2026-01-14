@@ -11,7 +11,7 @@ import {
 const ConnectSection = () => {
   return (
     <div className="min-h-screen bg-[#05070a] text-white py-20 px-6 font-sans">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20 space-y-6">
           <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1]">
