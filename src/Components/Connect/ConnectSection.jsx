@@ -13,10 +13,23 @@ const ConnectSection = () => {
     <div className="min-h-screen bg-[#05070a] text-white py-20 px-6 font-sans">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-20 space-y-6">
+        <div className="md:col-span-4 text-center md:sticky mb-3.5">
+          <h2 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-[1.1] mb-6">
+            <span className="">Let's</span> <br />
+            <span className="text-blue-500"> Connect</span>
+          </h2>
+
+          {/* <div className="w-20 h-1.5  bg-gradient-to-r from-blue-500 to-transparent mb-6"></div> */}
+
+          <p className="text-gray-400 mx-auto text-lg leading-relaxed max-w-md">
+            "Got a vision? Let's craft it into reality and build something
+            extraordinary together."
+          </p>
+        </div>
+        {/* <div className="text-center mb-20 space-y-6">
           <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1]">
-            Let's <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+            Let's
+            <span className="text-transparent bg-clip-text bg-blue-600">
               Connect
             </span>
           </h2>
@@ -24,7 +37,7 @@ const ConnectSection = () => {
             "Got a vision? Let's craft it into reality and build something
             extraordinary together."
           </p>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Side: Contact Information Cards */}
@@ -38,7 +51,7 @@ const ConnectSection = () => {
               title="Email"
               subtitle="Drop me an email"
               value="abdullahshamim884@gmail.com"
-              link="mailto:abdullahshamim884@gmail.com" 
+              link="mailto:abdullahshamim884@gmail.com"
             />
             <InfoCard
               icon={<Linkedin className="text-blue-500" />}

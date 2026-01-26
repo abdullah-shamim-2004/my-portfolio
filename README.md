@@ -4,7 +4,11 @@ This is my personal developer portfolio built with **React** and **Tailwind CSS*
 It showcases my skills, projects, education, and contact information in a clean,
 modern, and responsive single-page layout.
 
-🔗 **Live Demo:**https://abdullah-shamim-portfolio.netlify.app/
+🔗
+
+## Live Site
+
+[Portfolio](https://abdullah-shamim-portfolio.netlify.app/)
 
 <!-- 📦 **Source Code:** https://github.com/yourusername/portfolio -->
 
@@ -60,4 +64,3 @@ Each project includes:
 - GitHub repository link
 
 ---
-

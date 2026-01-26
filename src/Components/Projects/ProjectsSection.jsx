@@ -1,6 +1,7 @@
 import React from "react";
 import { Github, ExternalLink, Globe, Code2, Server } from "lucide-react";
 import scholar from "../../assets/scholar.png";
+import product from "../../assets/productaX.png";
 import local from "../../assets/local.png";
 import snow from "../../assets/snow.png";
 
@@ -28,6 +29,25 @@ const ProjectsSection = () => {
       serverLink:
         "https://github.com/abdullah-shamim-2004/ScholarStream-Server",
       liveLink: "https://scholar-stream-client.netlify.app/",
+    },
+    {
+      title: " ProductaX ",
+      description:
+        "A high-performance, full-stack e-commerce product gallery built with Next.js 14, MongoDB, and TanStack Query. This project features a clean, responsive UI and a robust backend API for seamless data fetching..",
+      tags: [
+        "Next",
+        "TailwindCSS",
+        "Next Auth",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "Axios",
+        "REST API",
+      ],
+      image: product,
+      codeLink: "https://github.com/abdullah-shamim-2004/ProductaX",
+      liveLink: "https://productax.vercel.app/",
     },
     {
       title: " LocalDelish ",
@@ -117,8 +137,14 @@ const ProjectsSection = () => {
                 {/* Action Buttons (As per image) */}
                 <div className="mt-auto flex flex-wrap gap-3">
                   <a
+                    href={project.liveLink}
+                    className="flex items-center gap-2 px-4 py-2 bg-white  text-black border rounded-lg text-xs font-bold hover:bg-gray-200 transition-colors"
+                  >
+                    <ExternalLink size={14} /> Live
+                  </a>
+                  <a
                     href={project.codeLink}
-                    className="flex items-center gap-2 px-4 py-2 bg-white text-black rounded-lg text-xs font-bold hover:bg-gray-200 transition-colors"
+                    className="flex items-center gap-2 px-4 py-2 bg-[#21262d] text-white border border-gray-700 rounded-lg text-xs font-bold hover:bg-[#30363d] transition-colors"
                   >
                     <Code2 size={14} /> Code
                   </a>
@@ -131,13 +157,6 @@ const ProjectsSection = () => {
                       <Server size={14} /> Server
                     </a>
                   )}
-
-                  <a
-                    href={project.liveLink}
-                    className="flex items-center gap-2 px-4 py-2 bg-[#21262d] text-white border border-gray-700 rounded-lg text-xs font-bold hover:bg-[#30363d] transition-colors"
-                  >
-                    <ExternalLink size={14} /> Live
-                  </a>
                 </div>
               </div>
             </div>
