@@ -21,9 +21,13 @@ const PortfolioHero = () => {
           </p>
           <div className="flex flex-col items-start  text-center justify-center gap-3">
             <div className="flex flex-wrap gap-4 pt-4">
-              <button className="px-8 py-4 bg-black border border-gray-800 rounded-xl font-semibold hover:bg-gray-900 transition-all shadow-[0_0_20px_rgba(168,85,247,0.15)]">
+              <a
+                href="/Resume.pdf"
+                download
+                className="px-8 py-4 bg-black border border-gray-800 rounded-xl font-semibold hover:bg-gray-900 transition-all shadow-[0_0_20px_rgba(168,85,247,0.15)]"
+              >
                 Download Resume
-              </button>
+              </a>
               <a
                 href="#projects"
                 className="px-8 py-4 bg-gray-900/50 backdrop-blur-md border border-gray-800 rounded-xl font-semibold hover:bg-gray-800 transition-all"

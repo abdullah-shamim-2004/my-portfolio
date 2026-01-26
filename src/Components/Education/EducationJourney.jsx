@@ -13,7 +13,7 @@ import {
 
 const EducationJourney = () => {
   return (
-    <div className="min-h-screen bg-gray-900 text-white md:py-25 px-4 font-sans selection:bg-[#00ff9d]/30">
+    <div className="min-h-[60vh] bg-gray-900 text-white md:py-25 px-4 font-sans selection:bg-[#00ff9d]/30">
       <div className="max-w-7xl flex flex-col-reverse gap-5 md:gap-20 md:flex-row justify-between items-center mx-auto">
         <div>
           <div className="space-y-10">
@@ -80,7 +80,7 @@ const EducationJourney = () => {
             </div>
 
             {/* Section 2: Course (Purple/Blue Theme) */}
-            <div className="group relative border border-purple-500/20 bg-[#161b22]/80 backdrop-blur-md rounded-2xl p-6 md:p-8 shadow-[0_0_30px_rgba(139,92,246,0.05)] transition-all hover:border-purple-500/50">
+            {/* <div className="group relative border border-purple-500/20 bg-[#161b22]/80 backdrop-blur-md rounded-2xl p-6 md:p-8 shadow-[0_0_30px_rgba(139,92,246,0.05)] transition-all hover:border-purple-500/50">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
                 <div className="flex items-center gap-5">
                   <div className="p-4 bg-purple-500/10 rounded-xl border border-purple-500/30">
@@ -139,7 +139,7 @@ const EducationJourney = () => {
                   color="purple"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
           {/* Floating Bottom Badge */}
           <div className="mt-12 flex justify-center">
