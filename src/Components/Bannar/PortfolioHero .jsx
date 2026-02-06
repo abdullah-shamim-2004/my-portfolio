@@ -5,7 +5,7 @@ const PortfolioHero = () => {
   return (
     <div className="min-h-[90vh] bg-[#050505] text-white font-sans selection:bg-purple-500/30">
       {/* Hero Section */}
-      <main className="max-w-7xl mx-auto px-8 pt-20 pb-32 flex flex-col md:flex-row items-center justify-between gap-12">
+      <main className="max-w-7xl mx-auto px-8 pt-20 pb-32 flex flex-col-reverse md:flex-row items-start md:items-center justify-start md:justify-between gap-12">
         {/* Text Content */}
         <div className="flex-1 space-y-6">
           <p className="text-lg text-gray-400 font-medium">
@@ -72,7 +72,7 @@ const PortfolioHero = () => {
           <div className="relative w-72 h-72 md:w-[450px] md:h-[450px] rounded-full border border-purple-500/30 p-4">
             <div className="w-full h-full rounded-full overflow-hidden border-2 border-purple-500/50">
               <img
-                src={`https://i.ibb.co.com/DHBmGQRh/IMG-20250706-114017.jpg`}
+                src="/src/assets/my-image.jpg"
                 alt="Profile"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
               />

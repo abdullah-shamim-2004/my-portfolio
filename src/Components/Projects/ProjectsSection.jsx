@@ -84,15 +84,13 @@ const ProjectsSection = () => {
       <div className="max-w-7xl flex flex-col md:flex-row lg:flex-row gap-5 md:gap-15 lg:gap-20 justify-between items-center mx-auto">
         {/* Header */}
         <div className="text-start mb-20">
-          <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1]">
-            Featured <br className="hidden md:block" />
-            <span className="text-blue-500 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-              Projects
-            </span>
+          <h2 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-[1.1]">
+            Featured <br />
+            <span className="text-blue-600 bg-clip-text">Projects</span>
           </h2>
-          <div className="w-20 h-1.5  bg-gradient-to-r from-blue-500 to-transparent mb-6"></div>
+          {/* <div className="w-20 h-1.5  bg-gradient-to-r from-blue-500 to-transparent mb-6"></div> */}
 
-          <p className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+          <p className="text-gray-400 mt-2 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             Showcasing my expertise through innovative solutions built with
             modern technologies, delivering visually stunning and highly
             functional web applications.
@@ -100,18 +98,18 @@ const ProjectsSection = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 gap-5">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-[#161b22] border border-gray-800 rounded-3xl overflow-hidden flex flex-col hover:border-blue-500/30 transition-all duration-300"
+              className="bg-[#161b22] border border-gray-800 rounded-3xl overflow-hidden flex flex-col justify-between md:flex-row hover:border-blue-500/30 transition-all duration-300"
             >
               {/* Project Preview Image */}
               <div className="relative group overflow-hidden h-64 bg-[#0d1117]">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
+                  className="w-xl h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 

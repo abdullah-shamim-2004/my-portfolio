@@ -100,28 +100,32 @@ const ConnectSection = () => {
               Send Message
             </h3>
 
-            <form className="space-y-5">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div className="space-y-2">
-                  <label className="text-xs font-bold text-gray-500 ml-1">
-                    Full Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Sharif Adal"
-                    className="w-full bg-[#0a0f1a] border border-white/10 rounded-xl px-5 py-4 focus:border-blue-500/50 outline-none transition-all placeholder:text-gray-700"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-xs font-bold text-gray-500 ml-1">
-                    Email Address <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="sharifadal@gmail.com"
-                    className="w-full bg-[#0a0f1a] border border-white/10 rounded-xl px-5 py-4 focus:border-blue-500/50 outline-none transition-all placeholder:text-gray-700"
-                  />
-                </div>
+            <form
+              action="https://formspree.io/f/mojnqadp"
+              method="POST"
+              className="space-y-5"
+            >
+              <div className="space-y-2">
+                <label className="text-xs font-bold text-gray-500 ml-1">
+                  Full Name <span className="text-red-500">*</span>
+                </label>
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="Sharif Adal"
+                  className="w-full bg-[#0a0f1a] border border-white/10 rounded-xl px-5 py-4 focus:border-blue-500/50 outline-none transition-all placeholder:text-gray-700"
+                />
+              </div>
+              <div className="space-y-2">
+                <label className="text-xs font-bold text-gray-500 ml-1">
+                  Email Address <span className="text-red-500">*</span>
+                </label>
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="sharifadal@gmail.com"
+                  className="w-full bg-[#0a0f1a] border border-white/10 rounded-xl px-5 py-4 focus:border-blue-500/50 outline-none transition-all placeholder:text-gray-700"
+                />
               </div>
 
               <div className="space-y-2">
@@ -129,6 +133,7 @@ const ConnectSection = () => {
                   Subject <span className="text-red-500">*</span>
                 </label>
                 <input
+                  name="subject"
                   type="text"
                   placeholder="Project Inquiry / Collaboration"
                   className="w-full bg-[#0a0f1a] border border-white/10 rounded-xl px-5 py-4 focus:border-blue-500/50 outline-none transition-all placeholder:text-gray-700"
@@ -140,13 +145,17 @@ const ConnectSection = () => {
                   Message <span className="text-red-500">*</span>
                 </label>
                 <textarea
+                  name="message"
                   rows="4"
                   placeholder="Tell me about your project, ideas, or just say hello! I'm excited to hear from you."
                   className="w-full bg-[#0a0f1a] border border-white/10 rounded-xl px-5 py-4 focus:border-blue-500/50 outline-none transition-all resize-none placeholder:text-gray-700"
                 ></textarea>
               </div>
 
-              <button className="w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold rounded-xl flex items-center justify-center gap-3 transition-all shadow-lg shadow-blue-500/20">
+              <button
+                type="submit"
+                className="w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-bold rounded-xl flex items-center justify-center gap-3 transition-all shadow-lg shadow-blue-500/20"
+              >
                 <Send size={18} /> Send Message
               </button>
             </form>

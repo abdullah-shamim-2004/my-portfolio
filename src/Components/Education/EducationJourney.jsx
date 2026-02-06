@@ -14,7 +14,7 @@ import {
 const EducationJourney = () => {
   return (
     <div className="min-h-[60vh] bg-gray-900 text-white md:py-25 px-4 font-sans selection:bg-[#00ff9d]/30">
-      <div className="max-w-7xl flex flex-col-reverse gap-5 md:gap-20 md:flex-row justify-between items-center mx-auto">
+      <div className="max-w-7xl flex flex-col-reverse gap-5 md:gap-20 md:flex-row justify-start md:justify-between items-start md:items-center mx-auto">
         <div>
           <div className="space-y-10">
             {/* Section 1: Diploma (Green Theme) */}
@@ -22,24 +22,24 @@ const EducationJourney = () => {
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
                 <div className="flex items-center gap-5">
                   <div className="p-4 bg-[#00ff9d]/10 rounded-xl border border-[#00ff9d]/30">
-                    <BookOpen className="w-8 h-8 text-[#00ff9d]" />
+                    <BookOpen className="w-8 h-8 text-[#07dc8e]" />
                   </div>
                   <div>
                     <h3 className="text-xl md:text-2xl font-bold tracking-tight">
                       Diploma in Computer Science & Technology
                     </h3>
-                    <p className="text-[#00ff9d] font-semibold text-sm">
+                    <p className="text-[#16eb9d] font-semibold text-sm">
                       Chandpur Polytechnic Institute
                     </p>
                   </div>
                 </div>
-                <div className="inline-block px-4 py-1.5 bg-[#00ff9d]/10 border border-[#00ff9d]/20 rounded-lg text-xs font-mono text-[#00ff9d]">
+                <div className="inline-block px-4 py-1.5 bg-[#00ff9d]/10 border border-[#00ff9d]/20 rounded-lg text-xs font-mono text-[#16eb9d]">
                   2024 — Present
                 </div>
               </div>
 
               <div className="flex items-center gap-3 mb-6">
-                <div className="h-[1px] w-8 bg-[#00ff9d]"></div>
+                <div className="h-[1px] w-8 bg-[#07dc8e]"></div>
                 <span className="text-xs uppercase tracking-[0.2em] font-bold text-gray-400">
                   Subjects & Achievements
                 </span>
@@ -142,7 +142,7 @@ const EducationJourney = () => {
             </div> */}
           </div>
           {/* Floating Bottom Badge */}
-          <div className="mt-12 flex justify-center">
+          {/* <div className="mt-12 flex justify-center">
             <div className="flex items-center gap-3 px-6 py-3 rounded-full bg-[#00ff9d]/5 border border-[#00ff9d]/20">
               <div className="w-2 h-2 bg-[#00ff9d] rounded-full animate-ping"></div>
               <p className="text-[10px] md:text-xs font-bold text-[#00ff9d] uppercase tracking-tighter">
@@ -150,10 +150,10 @@ const EducationJourney = () => {
                 web development
               </p>
             </div>
-          </div>{" "}
+          </div> */}
         </div>
         {/* Header Section */}
-        <div className="md:col-span-4 text-end md:sticky ">
+        <div className="md:col-span-4 text-start md:text-end md:sticky ">
           <h2 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-[1.1] mb-6">
             <span className="">Education</span> <br />
             <span className="text-blue-500">Journey</span>

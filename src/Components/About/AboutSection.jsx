@@ -4,9 +4,12 @@ const AboutSection = () => {
   return (
     <div className="bg-gray-900 min-h-[60vh] py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1  md:grid-cols-2 gap-12 items-center">
+        <div
+          className="grid grid-cols-1 
+         md:grid-cols-2 gap-12 items-center"
+        >
           {/* LEFT SIDE – Normal Text */}
-          <div className="text-gray-300">
+          <div className="text-gray-300 order-2 md:order-1">
             <p className="text-lg leading-relaxed mb-6">
               Hi, I'm{" "}
               <span className="text-white font-semibold">Abdullah Shamim</span>,
@@ -36,7 +39,7 @@ const AboutSection = () => {
           </div>
 
           {/* RIGHT SIDE – About Me Title */}
-          <div className="text-center md:text-right">
+          <div className="text-start md:text-right order-1 md:order-2">
             <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-[1.1] mb-6">
               About <br />
               <span className="text-blue-500">Me</span>
