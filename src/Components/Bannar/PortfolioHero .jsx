@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import React from "react";
+import myImage from "../../assets/my-image.jpg";
 
 const PortfolioHero = () => {
   return (
@@ -24,13 +25,19 @@ const PortfolioHero = () => {
               <a
                 href="/Resume.pdf"
                 download
-                className="px-8 py-4 bg-black border border-gray-800 rounded-xl font-semibold hover:bg-gray-900 transition-all shadow-[0_0_20px_rgba(168,85,247,0.15)]"
+                className="px-5 py-3 bg-gray-900/50 backdrop-blur-md border border-gray-800 rounded-xl font-semibold hover:bg-gray-800 transition-all"
               >
                 Download Resume
               </a>
               <a
+                href="https://drive.google.com/file/d/1ZhrQimTtJWARJgAp2-uPtM3m8LYhJcTw/view?usp=sharing"
+                className="px-5 py-3 bg-black border border-gray-800 rounded-xl font-semibold hover:bg-gray-900 transition-all shadow-[0_0_20px_rgba(168,85,247,0.15)]"
+              >
+                Browse Resume
+              </a>
+              <a
                 href="#projects"
-                className="px-8 py-4 bg-gray-900/50 backdrop-blur-md border border-gray-800 rounded-xl font-semibold hover:bg-gray-800 transition-all"
+                className="px-5 py-3 bg-gray-900/50 backdrop-blur-md border border-gray-800 rounded-xl font-semibold hover:bg-gray-800 transition-all"
               >
                 Browse Projects
               </a>
@@ -72,7 +79,7 @@ const PortfolioHero = () => {
           <div className="relative w-72 h-72 md:w-[450px] md:h-[450px] rounded-full border border-purple-500/30 p-4">
             <div className="w-full h-full rounded-full overflow-hidden border-2 border-purple-500/50">
               <img
-                src="/src/assets/my-image.jpg"
+                src={myImage}
                 alt="Profile"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
               />

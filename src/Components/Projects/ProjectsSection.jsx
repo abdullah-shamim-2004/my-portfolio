@@ -105,11 +105,11 @@ const ProjectsSection = () => {
               className="bg-[#161b22] border border-gray-800 rounded-3xl overflow-hidden flex flex-col justify-between md:flex-row hover:border-blue-500/30 transition-all duration-300"
             >
               {/* Project Preview Image */}
-              <div className="relative group overflow-hidden h-64 bg-[#0d1117]">
+              <div className="relative group overflow-hidden h-full bg-[#0d1117]">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-xl h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
+                  className="w-xl h-full py-0.5 object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
