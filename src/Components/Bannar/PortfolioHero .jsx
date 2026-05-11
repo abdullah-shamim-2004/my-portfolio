@@ -13,11 +13,11 @@ const PortfolioHero = () => {
             Hey, I'm Shamim 👋
           </p>
           <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-[1.1]">
-            <span className="text-blue-500">MERN-STACK</span> <br />
+            <span className="text-blue-500">FULL-STACK</span> <br />
             Developer
           </h1>
           <p className="text-gray-400 text-lg md:text-xl max-w-lg leading-relaxed">
-            I'm a MERN-STACK developer based in BD, I'll help you build
+            I'm a FULL-STACK developer based in BD, I'll help you build
             beautiful websites your users will love.
           </p>
           <div className="flex flex-col items-start  text-center justify-center gap-3">
@@ -39,7 +39,7 @@ const PortfolioHero = () => {
                 href="#projects"
                 className="px-5 py-3 bg-gray-900/50 backdrop-blur-md border border-gray-800 rounded-xl font-semibold hover:bg-gray-800 transition-all"
               >
-                Browse Projects
+                See Projects
               </a>
             </div>
             {/* Social Links & Scroll to Top */}
