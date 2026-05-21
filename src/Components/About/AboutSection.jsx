@@ -13,16 +13,16 @@ const AboutSection = () => {
             <p className="text-lg leading-relaxed mb-6">
               Hi, I'm{" "}
               <span className="text-white font-semibold">Abdullah Shamim</span>,
-              a frontend-focused MERN Stack Developer. I like building clean,
+              a frontend-focused FULL Stack Developer. I like building clean,
               fast, and usable web applications that don't fall apart when real
               people use them.
             </p>
 
             <p className="text-lg leading-relaxed mb-6">
-              I started with the basics — HTML, CSS, and JavaScript — then moved
-              into React, Next.js, Express, and MongoDB. Most of my work comes
+              I started with the basics — HTML, CSS, JavaScript and TypeScript — then moved
+              into React, Next.js, Express, MongoDB and PostgreSQL. I also learn AI intrigration with vercel SDK. Most of my work comes
               from personal and practice projects, but I treat them like real
-              products, not just course assignments.
+              products.
             </p>
 
             <p className="text-lg leading-relaxed mb-6">

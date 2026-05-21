@@ -17,8 +17,14 @@ import {
   SiNetlify,
   SiFigma,
   SiPostman,
+  SiTypescript,
+  SiShadcnui,
+  SiDaisyui,
+  SiPostgresql,
 } from "react-icons/si";
-import { MdApi, MdDevices } from "react-icons/md";
+import { MdApi, MdDevices, MdQueryStats } from "react-icons/md";
+import { TbSdk } from "react-icons/tb";
+import { BsCursor } from "react-icons/bs";
 
 const SkillsSection = () => {
   const skillCategories = [
@@ -28,10 +34,13 @@ const SkillsSection = () => {
       color: "border-[#00ff9d]/30",
       hoverColor: "hover:text-[#00ff9d]",
       skills: [
+        { name: "JavaScript (ES6+)", icon: <SiJavascript /> },
+        { name: "TypeScript", icon: <SiTypescript /> },
         { name: "React.js", icon: <SiReact /> },
         { name: "Next.js", icon: <SiNextdotjs /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss /> },
-        { name: "JavaScript (ES6+)", icon: <SiJavascript /> },
+        { name: "Shadcn", icon: <SiShadcnui /> },
+        { name: "DaisyUi", icon: <SiDaisyui /> },
         { name: "HTML5", icon: <SiHtml5 /> },
         { name: "CSS3", icon: <SiCss3 /> },
       ],
@@ -45,22 +54,25 @@ const SkillsSection = () => {
         { name: "Node.js", icon: <SiNodedotjs /> },
         { name: "Express.js", icon: <SiExpress /> },
         { name: "MongoDB", icon: <SiMongodb /> },
-        { name: "REST APIs", icon: <MdApi /> },
+        { name: "PostgreSQL", icon: <SiPostgresql /> },
         { name: "Firebase", icon: <SiFirebase /> },
+        { name: "REST APIs", icon: <MdApi /> },
       ],
     },
     {
-      title: "Tools & Others",
+      title: " AI & Other Tools ",
       icon: <Settings className="text-blue-400" />,
       color: "border-blue-500/30",
       hoverColor: "hover:text-blue-400",
       skills: [
+        { name: "Cursor", icon: <BsCursor /> },
+        { name: "Vercel AI SDK", icon: <TbSdk /> },
         { name: "Git & GitHub", icon: <SiGit /> },
         { name: "Vercel", icon: <SiVercel /> },
         { name: "Netlify", icon: <SiNetlify /> },
-        { name: "Figma to Code", icon: <SiFigma /> },
+        { name: "Figma", icon: <SiFigma /> },
         { name: "Postman", icon: <SiPostman /> },
-        { name: "Responsive Design", icon: <MdDevices /> },
+        { name: "TanStack Query", icon: < MdQueryStats/> },
       ],
     },
   ];
