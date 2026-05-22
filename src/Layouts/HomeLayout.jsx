@@ -7,6 +7,7 @@ import ProjectsSection from "../Components/Projects/ProjectsSection";
 import ConnectSection from "../Components/Connect/ConnectSection";
 import Footer from "../Components/Footer/Footer";
 import AboutSection from "../Components/About/AboutSection";
+import Experience from "../Components/Experience/Experience";
 
 const HomeLayout = () => {
   return (
@@ -41,6 +42,10 @@ const HomeLayout = () => {
         {/* Projects */}
         <section id="projects">
           <ProjectsSection />
+        </section>
+        {/* Experience */}
+        <section id="experience">
+          <Experience />
         </section>
 
         {/* Contact */}
