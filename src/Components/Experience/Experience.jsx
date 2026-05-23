@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import {} from "react";
 import {
   FiCode,
   FiServer,
@@ -18,39 +18,7 @@ import {
 import { MdWork } from "react-icons/md";
 import { Link } from "react-router";
 
-const responsibilities = [
-  { icon: <FiTerminal />, label: "Developing full-stack web applications" },
-  { icon: <FiServer />, label: "Building & integrating RESTful APIs" },
-  { icon: <FiCode />, label: "Writing clean, maintainable code" },
-  { icon: <FiGlobe />, label: "Building responsive UI interfaces" },
-  { icon: <FiGitBranch />, label: "Collaborating in agile sprints & reviews" },
-  { icon: <FiLayers />, label: "Full-stack feature ownership" },
-];
-
-const techStack = [
-  { icon: <SiReact />, label: "React" },
-  { icon: <SiNodedotjs />, label: "Node.js" },
-  { icon: <SiExpress />, label: "Express" },
-  { icon: <SiMongodb />, label: "MongoDB" },
-  { icon: <SiTailwindcss />, label: "Tailwind" },
-  { icon: <SiGit />, label: "Git" },
-];
-
 export default function Experience() {
-  const [visible, setVisible] = useState(false);
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([e]) => {
-        if (e.isIntersecting) setVisible(true);
-      },
-      { threshold: 0.1 },
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section className="bg-gray-900 min-h-[60vh] py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto ">
@@ -70,7 +38,7 @@ export default function Experience() {
 
                 <h2 className="mt-2 text-2xl font-bold text-white">SalesFam</h2>
 
-                <p className="mt-1 text-sm text-zinc-400">Mar 2025 - Present</p>
+                <p className="mt-1 text-sm text-zinc-400">Mar 2026 - Present</p>
               </div>
 
               <div className="h-14 w-14 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">

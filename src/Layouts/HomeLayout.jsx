@@ -8,6 +8,7 @@ import ConnectSection from "../Components/Connect/ConnectSection";
 import Footer from "../Components/Footer/Footer";
 import AboutSection from "../Components/About/AboutSection";
 import Experience from "../Components/Experience/Experience";
+import ChatbotButton from "../Components/AiChat/ChatbotButton";
 
 const HomeLayout = () => {
   return (
@@ -51,6 +52,10 @@ const HomeLayout = () => {
         {/* Contact */}
         <section id="contact">
           <ConnectSection />
+        </section>
+        {/* Chat bot button */}
+        <section>
+          <ChatbotButton />
         </section>
       </main>
 
