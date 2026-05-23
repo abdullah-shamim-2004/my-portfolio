@@ -16,6 +16,7 @@ import {
   SiGit,
 } from "react-icons/si";
 import { MdWork } from "react-icons/md";
+import { Link } from "react-router";
 
 const responsibilities = [
   { icon: <FiTerminal />, label: "Developing full-stack web applications" },
@@ -51,228 +52,92 @@ export default function Experience() {
   }, []);
 
   return (
-    <section
-      ref={ref}
-      className="min-h-screen w-full flex items-center"
-      style={{ background: "#0d1117" }}
-    >
-      <div className="max-w-7xl mx-auto w-full px-6 py-24 flex flex-col lg:flex-row items-center gap-16">
-        {/* ── LEFT: Card ── */}
+    <section className="bg-gray-900 min-h-[60vh] py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto ">
         <div
-          className={`w-full lg:w-[55%] transition-all duration-700 ${
-            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
-          style={{ transitionDelay: "0.1s" }}
+          className="grid grid-cols-1 
+         md:grid-cols-2 gap-12 items-center"
         >
-          <div
-            className="rounded-2xl p-7 relative overflow-hidden"
-            style={{
-              background: "#131c2b",
-              border: "1px solid rgba(16,185,129,0.25)",
-              boxShadow: "0 0 40px rgba(16,185,129,0.05)",
-            }}
-          >
-            {/* Top accent line */}
-            <div
-              className="absolute top-0 left-0 right-0 h-px"
-              style={{
-                background:
-                  "linear-gradient(90deg, transparent, #10b981, transparent)",
-              }}
-            />
+          {" "}
+          {/* ── LEFT: Card ── */}
+          <div className="w-full max-w-[650px] rounded-2xl border border-white/5 bg-[#151b23] p-6 shadow-2xl transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-400">
+            {/* Top Section */}
+            <div className="flex items-start justify-between">
+              <div>
+                <p className="text-sm text-blue-400 font-medium">
+                  Full-Stack Developer Intern
+                </p>
 
-            {/* ── Card Header ── */}
-            <div className="flex items-start justify-between gap-4 mb-6">
-              <div className="flex items-center gap-4">
-                {/* Icon box */}
-                <div
-                  className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0"
-                  style={{
-                    background: "rgba(16,185,129,0.12)",
-                    border: "1px solid rgba(16,185,129,0.3)",
-                  }}
-                >
-                  <MdWork className="text-emerald-400 text-xl" />
-                </div>
+                <h2 className="mt-2 text-2xl font-bold text-white">SalesFam</h2>
 
-                <div>
-                  <h3 className="font-bold text-white text-lg leading-tight">
-                    Full-Stack Developer Intern
-                  </h3>
-                  <p
-                    className="text-sm font-semibold mt-0.5"
-                    style={{ color: "#10b981" }}
-                  >
-                    EVU
-                  </p>
-                </div>
+                <p className="mt-1 text-sm text-zinc-400">Mar 2025 - Present</p>
               </div>
 
-              {/* Date badge */}
-              <div
-                className="flex-shrink-0 text-center px-4 py-2 rounded-lg text-sm font-semibold"
-                style={{
-                  background: "rgba(16,185,129,0.12)",
-                  border: "1px solid rgba(16,185,129,0.3)",
-                  color: "#10b981",
-                  lineHeight: "1.4",
-                }}
-              >
-                2024 —<br />
-                Present
+              <div className="h-14 w-14 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+                <span className="text-2xl">💻</span>
               </div>
             </div>
 
-            {/* ── Divider label ── */}
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-7 h-px" style={{ background: "#10b981" }} />
-              <div
-                className="w-7 h-px"
-                style={{ background: "rgba(16,185,129,0.4)" }}
-              />
-              <span
-                className="text-xs font-semibold tracking-widest uppercase"
-                style={{ color: "rgba(16,185,129,0.7)" }}
-              >
-                Responsibilities & Tech
-              </span>
-            </div>
+            {/* Description */}
+            <p className="mt-5 text-sm leading-6 text-zinc-300">
+              The Software as a Service (SaaS) delivery model has become
+              prevalent across various business applications, encompassing
+              office software, messaging tools, payroll processing systems,
+              database management software, and management solutions
+            </p>
 
-            {/* ── Responsibilities Grid ── */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-5">
-              {responsibilities.map(({ icon, label }, i) => (
-                <div
-                  key={i}
-                  className="flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors duration-200 hover:border-emerald-500/30"
-                  style={{
-                    background: "rgba(255,255,255,0.03)",
-                    border: "1px solid rgba(255,255,255,0.06)",
-                  }}
+            {/* Tech Stack */}
+            <div className="mt-5 flex flex-wrap gap-2">
+              {[
+                "Next.js",
+                "TypeScript",
+                "Shadcn",
+                "PostgreSQL",
+                "Prisma",
+                "Vercel AI SDK",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="rounded-full border border-zinc-700 bg-zinc-800 px-3 py-1 text-xs text-zinc-300"
                 >
-                  <span style={{ color: "#10b981", fontSize: "0.85rem" }}>
-                    {icon}
-                  </span>
-                  <span
-                    className="text-sm"
-                    style={{ color: "rgba(200,210,220,0.8)" }}
-                  >
-                    {label}
-                  </span>
-                </div>
+                  {tech}
+                </span>
               ))}
             </div>
 
-            {/* ── Divider label ── */}
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-7 h-px" style={{ background: "#10b981" }} />
-              <div
-                className="w-7 h-px"
-                style={{ background: "rgba(16,185,129,0.4)" }}
-              />
-              <span
-                className="text-xs font-semibold tracking-widest uppercase"
-                style={{ color: "rgba(16,185,129,0.7)" }}
-              >
-                Tech Stack
-              </span>
-            </div>
+            {/* Footer */}
+            <div className="mt-6 flex items-center justify-between border-t border-zinc-800 pt-4">
+              <div>
+                <p className="text-xs text-zinc-500">Team</p>
+                <p className="text-sm font-medium text-white">
+                  Remote Collaboration
+                </p>
+              </div>
 
-            {/* ── Tech Stack Grid ── */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-              {techStack.map(({ icon, label }, i) => (
-                <div
-                  key={i}
-                  className="flex items-center gap-2.5 px-3 py-2.5 rounded-lg transition-all duration-200 hover:border-emerald-500/40 group"
-                  style={{
-                    background: "rgba(255,255,255,0.03)",
-                    border: "1px solid rgba(255,255,255,0.06)",
-                  }}
-                >
-                  <span
-                    className="text-base transition-colors duration-200 group-hover:text-emerald-400"
-                    style={{ color: "#10b981" }}
-                  >
-                    {icon}
-                  </span>
-                  <span
-                    className="text-sm font-medium"
-                    style={{ color: "rgba(200,210,220,0.85)" }}
-                  >
-                    {label}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            {/* Active badge */}
-            <div className="mt-5 flex items-center gap-2">
-              <span
-                className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold tracking-wide"
-                style={{
-                  background: "rgba(16,185,129,0.1)",
-                  border: "1px solid rgba(16,185,129,0.3)",
-                  color: "#10b981",
-                }}
+              <Link
+                to={"https://www.salesfam.com/"}
+                className="rounded-lg bg-blue-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-600"
               >
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block" />
-                Currently Active
-              </span>
-              <span
-                className="text-xs"
-                style={{ color: "rgba(150,160,180,0.6)" }}
-              >
-                · On-site · Internship
-              </span>
+                View Project
+              </Link>
             </div>
           </div>
-        </div>
+          {/* ── RIGHT: Big Title ── */}
+          <div className="text-start md:text-right order-1 md:order-2">
+            <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight leading-[1.1] mb-6">
+              Work <br />
+              <span className="text-blue-500">Experience</span>
+            </h1>
 
-        {/* ── RIGHT: Big Title ── */}
-        <div
-          className={`w-full lg:w-[45%] text-center lg:text-left transition-all duration-700 ${
-            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
-          style={{ transitionDelay: "0.25s" }}
-        >
-          <h2
-            className="font-black leading-none mb-4"
-            style={{
-              fontFamily: "'Syne', sans-serif",
-              fontSize: "clamp(3.5rem, 8vw, 6rem)",
-              color: "#ffffff",
-              letterSpacing: "-0.03em",
-            }}
-          >
-            Work
-          </h2>
-          <h2
-            className="font-black leading-none mb-6"
-            style={{
-              fontFamily: "'Syne', sans-serif",
-              fontSize: "clamp(3.5rem, 8vw, 6rem)",
-              color: "#10b981",
-              letterSpacing: "-0.03em",
-            }}
-          >
-            Experience
-          </h2>
-          <p
-            className="text-base leading-relaxed"
-            style={{ color: "rgba(160,175,195,0.85)", maxWidth: "360px" }}
-          >
-            Building real-world{" "}
-            <strong style={{ color: "#e2e8f0" }}>full-stack products</strong> as
-            a developer intern, turning ideas into shipped, production-ready
-            features.
-          </p>
+            <p className="text-gray-400 text-lg md:text-xl max-w-lg leading-relaxed md:ml-auto">
+              Building real-world{" "}
+              <strong className="text-gray-200">full-stack products</strong> as
+              a developer intern, turning ideas into shipped, production-ready
+              features.
+            </p>
+          </div>
         </div>
       </div>
-
-      {/* Google Font */}
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap"
-      />
     </section>
   );
 }
